@@ -23,11 +23,9 @@ public class ParseIntegers {
             String next = words.next();
             try {
                 int number = Integer.parseInt(next);
-                sum+=number;
-            }
-            catch (Exception ex){
-                System.out.println(ex.getMessage());
-                justWords+=" "+next;
+                sum += number;
+            } catch (Exception ex) {
+                justWords += " " + next;
             }
         }
         System.out.println("Sum is " + sum);
