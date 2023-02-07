@@ -24,7 +24,7 @@ public class ParseIntegers {
             try {
                 int number = Integer.parseInt(next);
                 sum += number;
-            } catch (Exception ex) {
+            } catch (NumberFormatException e) {
                 justWords += " " + next;
             }
         }
